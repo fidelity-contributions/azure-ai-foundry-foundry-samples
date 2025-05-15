@@ -16,8 +16,8 @@ The Saifr Communication Compliance Agent uses gpt-40-mini (version:2024-07-18) a
 this as it is a fast small model that is function calling aware. This agent leverages **Azure AI Agent Service**, using the following tools,  "AI Tools", in this case 
 each tool is in fact a Saifr model that has been deployed from the Azure AI Foundry Model catalog (see below). The tools are configured using OpenAPI 3.0 specification. 
 
-- [Saifr-Retail-Marketing-Compliance](https://ai.azure.com/explore/models/Saifr-Retail-Marketing-Compiance/version/1/registry/azureml-saifr)
-- [Saifr-Language-Suggestion](https://ai.azure.com/explore/models/Saifr-Language-Suggestion/version/1/registry/azureml-saifr)
+- Saifr-Retail-Marketing-Compliance
+- Saifr-Language-Suggestion
 
 Given the following prompt:-
 > Given the following paragraph check it for compliance having a risk level of Low. For any sentences 
