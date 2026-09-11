@@ -287,7 +287,15 @@ print_value(resolve(query))
             workflow,
         )
         self.assertIn(
+            "FOUNDRY_PROJECT_ENDPOINT: ${{ vars.AZURE_AI_PROJECT_ENDPOINT }}",
+            workflow,
+        )
+        self.assertIn(
             "MODEL_DEPLOYMENT: ${{ vars.MODEL_DEPLOYMENT }}",
+            workflow,
+        )
+        self.assertIn(
+            "FOUNDRY_MODEL_DEPLOYMENT: ${{ vars.MODEL_DEPLOYMENT }}",
             workflow,
         )
         self.assertIn('SKIP_PROVISION: "true"', workflow)
